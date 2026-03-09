@@ -117,7 +117,7 @@ const Contact = () => {
             <div className="mt-16 p-6 rounded-2xl bg-darkAccent text-white flex items-center justify-between">
               <div>
                 <p className="text-[10px] uppercase font-bold text-gray-500 tracking-[0.2em] mb-1">Official HashTag</p>
-                <p className="font-orbitron font-bold text-xl">#EMINENCE2024</p>
+                <p className="font-orbitron font-bold text-xl">#EMINENCE2026</p>
               </div>
               <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center">
                 <div className="w-2 h-2 rounded-full bg-neonPink animate-ping" />

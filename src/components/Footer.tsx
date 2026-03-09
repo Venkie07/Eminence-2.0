@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 uppercase tracking-widest gap-4">
-          <p>© 2024 EMINENCE 2.0. All Rights Reserved.</p>
+          <p>© 2026 EMINENCE 2.0. All Rights Reserved.</p>
           <p></p>
         </div>
       </div>
