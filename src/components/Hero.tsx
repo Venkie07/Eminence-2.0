@@ -24,8 +24,8 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl font-inter text-darkAccent font-medium tracking-wide max-w-2xl mx-auto">
-            Awareness & Business Pitching Event
+          <p className="text-xl md:text-2xl font-inter text-darkAccent font-bold font-orbitron  tracking-wide max-w-2xl mx-auto">
+            The Venture Vault
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-10">
