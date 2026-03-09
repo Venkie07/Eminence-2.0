@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    @apply font-inter bg-white text-darkAccent antialiased selection:bg-neonPurple selection:text-white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-orbitron;
+  }
+}
+
+@layer components {
+  .btn-neon {
+    @apply px-8 py-3 rounded-full font-bold transition-all duration-300 relative overflow-hidden text-sm uppercase tracking-wider;
+    background: linear-gradient(90deg, #7A00FF, #FF00C8);
+    color: white;
+    box-shadow: 0 0 15px rgba(122, 0, 255, 0.3);
+  }
+
+  .btn-neon:hover {
+    @apply scale-105;
+    box-shadow: 0 0 25px rgba(255, 0, 200, 0.5);
+  }
+
+  .btn-outline {
+    @apply px-8 py-3 rounded-full font-bold transition-all duration-300 border-2 border-neonPurple text-neonPurple text-sm uppercase tracking-wider hover:bg-neonPurple hover:text-white;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-lightGray rounded-3xl shadow-soft transition-all duration-300;
+  }
+
+  .neon-text {
+    @apply bg-clip-text text-transparent bg-neon-gradient pr-5;
+  }
+
+  .glitch-effect {
+    position: relative;
+    animation: glitch 1s linear infinite;
+  }
+
+  @keyframes glitch {
+    2%, 64% { transform: translate(2px, 0) skew(0deg); }
+    4%, 60% { transform: translate(-2px, 0) skew(0deg); }
+    62% { transform: translate(0, 0) skew(5deg); }
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, #f1f1f1 1px, transparent 1px),
+      linear-gradient(to bottom, #f1f1f1 1px, transparent 1px);
+  }
+  
+  .shadow-soft {
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .neon-glow {
+    filter: drop-shadow(0 0 10px rgba(122, 0, 255, 0.5));
+  }
+}
